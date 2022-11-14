@@ -87,6 +87,12 @@
 
     /* or 27px */
     letter-spacing: 0.1em;
+
+    &--icon{
+        &::after{
+            content: ' →';
+        }
+    }
 }
 
 // Button Rules End

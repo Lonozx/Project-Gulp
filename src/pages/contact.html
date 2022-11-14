@@ -11,18 +11,18 @@
 </head>
 
 <body>
-   
+
     <div class="wrapper">
 
         <header class="header">
             <div class="container header__container">
                 <img class="logo" src="../img/Logo.svg" alt="logo">
                 <nav class="header__nav">
-                   <label class="header__nav-label" for="gam">
-                    <div class="header__nav-icon">☰</div>
-                   </label>
-                   <input id="gam" class="header__nav-input" type="checkbox">
-                   <ul class="header__nav-row">
+                    <label class="header__nav-label" for="gam">
+                        <div class="header__nav-icon">☰</div>
+                    </label>
+                    <input id="gam" class="header__nav-input" type="checkbox">
+                    <ul class="header__nav-row">
                         <li class="header__nav-item">
                             <a class="header__nav-link" href="/">Home</a>
                         </li>
@@ -38,70 +38,135 @@
                         <li class="header__nav-item header__nav-item--active">
                             <a class="header__nav-link" href="./contact.html">Contact</a>
                         </li>
-                   </ul>
+                    </ul>
                 </nav>
             </div>
         </header>
 
-       <main class="contact-page">
-          <section>
+
+        <section class="section-contact">
             <div class="container">
-                <h1>Contact page</h1>
-            </div>
-            
-          </section>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
-       </main>
+                <div class="container__contact">
+                    <div class="container__main">
+                        <div class="main-title">
+                            <h1 class="h1">Contact Us</h1>
+                        </div>
+                        <div class="container__desc">
+                            <p class="h3 text-contact">Contact information</p>
+                            <p class="h6">486 Rahi street, Berlin .98
+                                Germany</p>
+                            <div class="contact-item">
+                                <img class="contact-img" src="../img/contactUs/Tel.svg" alt="">
+                                <a target="_blank" class="h6" href="48601366816">+48 601 366 816</a>
+                            </div>
+                            <div class="contact-item">
+                                <img class="contact-img" src="../img/contactUs/Email.svg" alt="">
+                                <a target="_blank" href="mailto:company@support.com" class="h6">company@support.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-bottom">
+                            <h2 class="h3">Follow Us</h2>
+                            <ul class="contact-list">
+                                <li><a target="_blank" href="https://www.facebook.com/prontongood/"><img class="contact-link fb" src="../img/contactUs/icon-FB.svg"
+                                            alt=""></a></li>
+                                <li><a target="_blank" href="#"><img class="contact-link tw" src="../img/contactUs/icon-Twitter.svg"
+                                            alt=""></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/mykhailo-savichev-a486a5190/"><img class="contact-link ln" src="../img/contactUs/icon-Lin.svg"
+                                            alt=""></a></li>
+                                <li><a target="_blank" href="#"><img class="contact-link dr" src="../img/contactUs/icon-Dribble.svg"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-       <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__content">
-                <h2 class="title footer__title">
-                    Need a project?
-                </h2>
-                <a class="h6 footer__contact" href="tel:2395550108">
-                    (239) 555-0108
-                </a>
-                <a class="h6 footer__contact" href="mailto:tanya.hill@example.com">
-                    tanya.hill@example.com
-                </a>
+                </div>
+                <div class="container__form">
+                    <p class="h6">If you need our help with your user account, have questions about how to use the
+                        platform or
+                        are experiencing technical difficulties, please do not hesitate to contact us.</p>
+                    <div class="container__form-list">
+                        <form action="">
+                            <div class="form-space">
+                            <p class="h6 spacing">Name*</p>
+                            <input class="contact-form" type="text" name="Name" id="name" placeholder="Wolter Moss">
+
+                            <p class="h6 spacing">Email*</p>
+                            <input class="contact-form" type="text" name="Email" id="email"
+                                placeholder="imfo@manifest.com">
+
+                            <p class="h6 spacing"></p>
+                            <select class="h6" name="reason" id="select">
+                                <option value="Reason for contact">Reason for contact</option>
+                                <option value="Reason for contact">Reason for contact</option>
+                                <option value="Reason for contact">Reason for contact</option>
+                                <option value="Reason for contact">Reason for contact</option>
+                            </select>
+
+                            <p class="h6 spacing">Message*</p>
+                            <input class="contact-form" type="text" name="message" id="message"
+                                placeholder="Hi there...">
+                            </div>
+                        </form>
+                        <button class="resume_button resume_button--icon">Send</button>
+
+                    </div>
+                </div>
+
             </div>
 
-            <ul class="footer__social-row">
-                <li class="footer__social-item">
-                    <a class="h6 hover-link-animation footer__link" href="#">
-                        Facebook
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <h2 class="title footer__title">
+                        Need a project?
+                    </h2>
+                    <a class="h6 footer__contact" href="tel:2395550108">
+                        (239) 555-0108
                     </a>
-                </li>
-                <li class="footer__social-item">
-                    <a class="h6 hover-link-animation footer__link" href="#">
-                        Instagram
+                    <a class="h6 footer__contact" href="mailto:tanya.hill@example.com">
+                        tanya.hill@example.com
                     </a>
-                </li>
-                <li class="footer__social-item">
-                    <a class="h6 hover-link-animation footer__link" href="#">
-                        Dribbble
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a class="h6 hover-link-animation footer__link" href="#">
-                        Linkedin
-                    </a>
-                </li>
-            </ul>
-           
-            <p class="h9 footer__description">
-                © Copyright Sasha Theme. 2022
-            </p>
-        </div>
-    </footer>
+                </div>
+
+                <ul class="footer__social-row">
+                    <li class="footer__social-item">
+                        <a class="h6 hover-link-animation footer__link" href="#">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="h6 hover-link-animation footer__link" href="#">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="h6 hover-link-animation footer__link" href="#">
+                            Dribbble
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="h6 hover-link-animation footer__link" href="#">
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="h9 footer__description">
+                    © Copyright Sasha Theme. 2022
+                </p>
+            </div>
+        </footer>
 
     </div>
-    
+
 
     <!--Обовязково додавати потрібно для JS -->
     <script> var exports = {}; </script>

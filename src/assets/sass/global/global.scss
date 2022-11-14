@@ -18,11 +18,31 @@ body {
     flex-direction: column;
 }
 
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+
+
+select{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: transparent;
+}
+
 .hover-link-animation {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    display: block;
-
+    display: block; 
+    @media (max-width:tablet) {
+        &:hover {
+            transform: scale(0);
+            transition: 0s transform;
+        }      
+    }
     &:hover {
         transform: scale(1.1);
     }

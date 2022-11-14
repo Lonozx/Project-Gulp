@@ -52,3 +52,14 @@ letter-spacing: 0.1em;
         padding: 10px 0;
     }
 }
+//Heading font
+.h1{
+    /* Heading / H1 */
+
+font-family: $main-fonts;
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 64px;
+letter-spacing: 0.05em;
+}
