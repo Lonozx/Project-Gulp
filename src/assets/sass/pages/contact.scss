@@ -30,7 +30,7 @@
 }
 
 .container__form-list{
-    padding: 130px 0px;
+    // padding: 130px 0px;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -59,7 +59,7 @@
     flex-direction: column;
     padding: 130px 0px;
     width: 50%;
-    gap: 48px;
+    gap: 128px;
 
     @media (max-width:$tablet) {
         width: 100%;
@@ -67,7 +67,7 @@
     }
 }
 .container__desc{
-    padding: 192px 0px;
+    padding: 140px 0px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -117,4 +117,5 @@
     // padding: 69px 0px;
     display: flex;
     flex-direction: column;
+    gap: 25px;
 }
