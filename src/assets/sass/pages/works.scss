@@ -17,6 +17,12 @@
     }
 }
 
+.h3::after{
+    content:'';
+    height: 40%;
+    border-bottom: 0.5px solid grey;
+}
+
 
 .container{
     &__section-left{

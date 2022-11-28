@@ -24,6 +24,11 @@ $sub-fonts: 'Lato', sans-serif;
     line-height: 27px;
     letter-spacing: 0.1em;
     color: $color-black;
+    &--icon{
+        &::after{
+            content: '→';
+        }
+    }
 }
 
 .h9 {
@@ -42,6 +47,7 @@ font-weight: 400;
 font-size: 23px;
 line-height: 27px;
 letter-spacing: 0.1em;
+    &--line{
     &::after{
         content: '';
         width:40%;
@@ -51,6 +57,7 @@ letter-spacing: 0.1em;
         border-bottom: 1px solid grey;
         padding: 10px 0;
     }
+}
 }
 //Heading font
 .h1{

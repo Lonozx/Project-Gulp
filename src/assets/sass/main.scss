@@ -6,6 +6,7 @@
 // Global Style
 @import './global/resets.scss';
 @import './global/global.scss';
+@import './global/animation.scss';
 // Global Style End
 
 // Common section
@@ -15,6 +16,7 @@
 
 // Pages Style
 @import './pages/home.scss';
+@import './pages/homepage.scss';
 @import './pages/contact.scss';
 @import './pages/about.scss';
 @import './pages/works.scss';
