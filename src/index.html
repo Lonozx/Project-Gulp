@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--Шлях до css це відносний шлях не залежить ввід папки-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
 </head>
 
@@ -38,6 +40,7 @@
                         <li class="header__nav-item">
                             <a class="header__nav-link" href="./pages/contact.html">Contact</a>
                         </li>
+                        
                     </ul>
                 </nav>
             </div>
@@ -50,23 +53,27 @@
                     <h2 class="title">Manifest is a newborn theme.
                         Clean, simple and fast.</h1>
                 </div>
-                <div class="container__slider">
-                    <div class="slider__item">
-                        <img class="slider__item-image" src="../img/home/slide-left.jpg" alt="">
+                <div class="swiper-container mySwiper">
+                <div class="container__slider swiper-wrapper">
+                    <div class="slider__item swiper-slide">
+                        <img class="slider__item-image" src="../img/home/slide-abalone.jpg" alt="">
+                        <p class="h6">Dreamy</p>
                     </div>
-                    <div class="slider__item">
+                    <div class="slider__item swiper-slide">
                         <img class="slider__item-image" src="../img/home/slide-mixkit.jpg" alt="">
                         <p class="h6">Mixkit Inspo</p>
                     </div>
-                    <div class="slider__item">
+                    <div class="slider__item swiper-slide">
                         <img class="slider__item-image" src="../img/home/slide-abalone.jpg" alt="">
                         <p class="h6">Abalone</p>
                     </div>
-                    <div class="slider__item">
-                        <img class="slider__item-image" src="../img/home/slide-dreamy.jpg" alt="">
+                    <div class="slider__item swiper-slide">
+                        <img class="slider__item-image" src="../img/home/slide-mixkit.jpg" alt="">
                         <p class="h6">Dreamy</p>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+            </div>
                 <div class="topic-view">
                     <div class="topic-view__item">
                         <h2 class="h3">Full-time UI/UX designer
@@ -178,6 +185,21 @@
 
 
     <!--Обовязково додавати потрібно для JS -->
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
     <script> var exports = {}; </script>
     <script src="@@webRoot/js/index.js"></script>
 </body>

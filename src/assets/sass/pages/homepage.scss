@@ -1,5 +1,50 @@
 * {
-    // overflow: hidden;
+   
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+// .swiper-container{
+//     display: flex;
+//     gap: 10px;
+// }
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.swiper-pagination {
+    
+    bottom: -10px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    // height: calc((100% - 30px) / 2);
+    height: 544px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .container {
@@ -7,6 +52,7 @@
         width: 80%;
         padding: 100px 160px;
         display: flex;
+
         @media (max-width:$tablet) {
             padding: 20px 16px;
         }
@@ -14,10 +60,12 @@
 
     &__slider {
         // padding: 128px 0;
+        padding: 30px;
         display: flex;
         gap: 20px;
-        overflow: scroll;
-        scroll-snap-align: start;
+        // overflow: scroll;
+        // scroll-snap-align: start;
+
         @media (max-width:$tablet) {
             padding: 0px 16px;
         }
@@ -27,10 +75,16 @@
 .slider__item-image {
     width: 544px;
     height: 544px;
+
     @media (max-width:$tablet) {
         width: 250px;
         height: 250px;
     }
+}
+
+.slider__item{
+    display: flex;
+    flex-direction: column;
 }
 
 .h6 {
@@ -42,16 +96,18 @@
         padding: 64px 16px;
         gap: 10px;
     }
+
     display: flex;
     // justify-content: center;
     gap: 210px;
     padding: 128px 160px;
-    
+
     &__item {
         display: flex;
         flex-direction: column;
         width: 50%;
         gap: 10px;
+
         @media (max-width:$tablet) {
             gap: 10px;
         }
@@ -61,6 +117,7 @@
         // padding: 0 210px;
         gap: 48px;
     }
+
     @media (max-width:$tablet) {
         display: flex;
         flex-wrap: wrap;
@@ -69,7 +126,8 @@
 
 .description {
     padding: 64px 0;
-    &__else{
+
+    &__else {
         padding: 35px 0;
     }
 
@@ -81,6 +139,7 @@
 
 .topic-latest {
     padding: 0 160px;
+
     @media (max-width:$tablet) {
         padding: 20px 16px;
     }
@@ -88,7 +147,7 @@
     &__item-above {
         gap: 90%;
         display: flex;
-        
+
         @media (max-width:$tablet) {
             gap: 8px;
             display: flex;
@@ -97,6 +156,7 @@
     }
 
     &__item-box {
+
         // width: 350px;
         @media (max-width:$tablet) {
             padding: 20px 0px;
@@ -107,8 +167,9 @@
         width: fit-content;
         // width: 100%;
         height: 250px;
+
         @media (max-width:$tablet) {
-           width: 288px;
+            width: 288px;
         }
     }
 
@@ -116,6 +177,7 @@
         padding: 40px 0;
         gap: 20px;
         display: flex;
+
         @media (max-width:$tablet) {
             display: flex;
             flex-wrap: wrap;
@@ -125,7 +187,7 @@
     }
 }
 
-.last-item{
+.last-item {
     display: flex;
     justify-content: end;
 }
@@ -135,6 +197,7 @@
     padding: 24px 0;
     display: flex;
     justify-content: space-between;
+
     @media (max-width:$tablet) {
         display: flex;
         flex-direction: column;
