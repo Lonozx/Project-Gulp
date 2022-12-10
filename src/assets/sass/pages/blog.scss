@@ -1,0 +1,124 @@
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.linked{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: #7B7B7B;
+    }
+}
+
+.title{
+    @media (max-width:$tablet) {
+        margin: -40px 0;
+    }
+  
+}
+.container{
+   &__button{
+    display: flex;
+    justify-content: center;
+   }
+    &__dropdown{
+        display: flex;
+        gap:39px;
+        padding: 0 135px;
+        @media (max-width:$tablet) {
+            padding: 0 16px;
+            gap: 20px;
+        }
+    }
+}
+
+.padd{
+    padding: 65px 0;
+    margin-top: auto;
+    @media (max-width:$tablet) {
+        padding: 16px 0 ;
+    }
+}
+
+.container__inner{
+    
+    padding: 48px 135px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    @media (max-width:$tablet) {
+        padding: 48px 16px;
+    }
+    &-item{
+        width: 540px;
+    }
+    &-item-img{
+        width: 540px;
+        height: 250px;
+        @media (max-width:$tablet) {
+            width: 288px;
+            height: 137px;
+        }
+    }
+}
+
+.container__content{
+    display: flex;
+    padding: 0 135px;
+    gap: 68px;
+  
+    @media (max-width:$tablet) {
+        padding: 58px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-image{
+        width: 570px;
+        height: 470px;
+        @media (max-width:$tablet) {
+            width: 288px;
+            height: 250px;
+        }
+    }
+
+
+    &-description{
+        // &:hover{
+        //     cursor: pointer;
+        //     color: #7B7B7B;
+        // }
+        padding: 40px 0;
+        width: 50%;
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        max-width: 448px;
+        @media (max-width:$tablet) {
+            width: 100%;
+            gap: 16px;
+            padding: 0 0;
+        }
+    }
+
+}
+.dropdown{
+    max-width: 407px;
+    border-bottom: 1px solid black;
+}
+
+.h6{
+    &--pad{
+        padding: 30px 0;
+        @media (max-width:$tablet) {
+            padding: 0 0 ;
+        }
+    }
+    &--digits{
+        padding: 50px 0;
+        @media (max-width:$tablet) {
+            padding: 0 0 ;
+        }
+    }
+}

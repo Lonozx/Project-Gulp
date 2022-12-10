@@ -17,6 +17,29 @@ $sub-fonts: 'Lato', sans-serif;
     }
 }
 
+.h4{
+    /* Heading / H4 */
+
+font-family:$sub-fonts;
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 32px;
+&--line{
+    &::before{
+        content: '';
+        border-left: 2px gray solid;
+        height: 90px;
+        width: 30px;
+        float: left;
+        @media (max-width:$tablet) {
+           height: 230px;     
+        }
+    }
+}
+}
+
+
 .h6 {
     font-family: $sub-fonts;
     font-weight: 400;
@@ -28,6 +51,9 @@ $sub-fonts: 'Lato', sans-serif;
         &::after{
             content: '→';
         }
+    }
+    &--black{
+        color: black;
     }
 }
 
